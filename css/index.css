@@ -227,7 +227,128 @@ footer{
 }
 
 @media screen and (min-width: 1200px){
+    img{
+        position: revert;
+        width: 100%;
+    }
+
     #container{
         max-width: 900px;
+    }
+
+    #but h2{
+        text-align: center;
+        font-size: 6em;
+    }
+
+    .right-pad{
+        padding-right: 20%;
+    }
+
+    .left-pad{
+        padding-left: 20%;
+    }
+
+    .extra{
+    margin: 200px 0;
+    }
+
+    .extra-double{
+        margin: 400px 0;
+    }
+
+    .extra-half{
+        margin-top: 200px;
+    }
+
+    .extra-none{
+        margin-top: 400px;
+        margin-bottom: 0;
+    }
+
+    #studio-rotate-container{
+        width: 50%;
+    }
+
+    #studio-rotate-img {
+        width: 50%;
+        height: 100%;
+        position: revert;
+        align-self: center;
+    }
+
+    #achieving {
+        margin: 300px 0;
+        font-size: 2em;
+    }
+
+    #white-space{
+        margin: 300px 0;
+    }
+
+    #white-space h2{
+        font-size: 7em;
+        line-height: 150px;
+    }
+
+    #articles p, img{
+        width: 40%;
+        align-self: center;
+        justify-self: space-between;
+    }
+
+    #articles article{
+        justify-content: space-around;
+    }
+
+    #repos{
+        order: +1;
+    }
+
+    .center{
+        text-align: center;
+    }
+
+    .studios{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .studios img{
+        width: 50%;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    #studios-img{
+        margin-top: 50px;
+    }
+
+    #vogue{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 200px 0;
+    }
+
+    #vogue p{
+        width: 50%;
+    }
+
+    #vogue img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .bigger{
+        font-size: 10em;
+    }
+
+    #combine{
+        font-size: 0.8em;
+    }
+
+    .m-meet{
+        text-align: center;
     }
 }
