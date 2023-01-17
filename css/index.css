@@ -143,7 +143,7 @@ img{
     flex-wrap: wrap;
 }
 
-#articles p{
+.article-p{
     margin: 50px 0;
 }
 
@@ -222,11 +222,14 @@ img{
 }
 
 footer{
+    display: flex;
+    align-items: center;
+
     background-color: black;
     color: #9b9b9b;
     font-weight: 300;
     font-size: 1.1em;
-    padding: 20px 0;
+    padding: 5px 0;
     padding-left: 70px;
     position: fixed;
     letter-spacing: 1px;
@@ -235,41 +238,283 @@ footer{
     width: 100%;
 }
 
-#menuToggle
-{
+#banaware{
+    margin-left: 25px;
+    padding-bottom: 5px;
+    z-index: 2000;
+}
+    
+@media screen and (min-width: 770px){
+    #container{
+        max-width: 550px;
+    }
+}
+    
+@media screen and (min-width: 1260px){
+    p{
+        font-size: 1.2em;
+    }
+
+    img{
+        position: revert;
+        width: 100%;
+    }
+    
+    #container{
+        max-width: 900px;
+    }
+
+    #but h2{
+        text-align: center;
+        font-size: 6em;
+    }
+    
+    .right-pad{
+        padding-right: 20%;
+    }
+    
+    .left-pad{
+        padding-left: 20%;
+    }
+
+    .center{
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    .extra{
+        margin: 300px 0;
+    }
+        
+    .extra-font-size{
+        font-size: 1.4em;
+    }
+
+    .extra-font-sizes{
+        font-size: 1.6em;
+    }
+
+    .extra-double{
+        margin: 400px 0;
+    }
+    
+    .extra-half{
+        margin-top: 200px;
+    }
+    
+    .extra-none{
+        margin-top: 400px;
+        margin-bottom: 0;
+    }
+    
+    #studio-rotate-img {
+        width: 50%;
+        height: 100%;
+        position: revert;
+        align-self: center;
+    }
+    
+    #achieving {
+        margin: 300px 0;
+        font-size: 2em;
+    }
+    
+    #white-space{
+        margin: 300px 0;
+        margin-bottom: 230px;
+    }
+    
+    #white-space h2{
+        font-size: 7em;
+        line-height: 150px;
+    }
+    
+    #articles img{
+        width: 40%;
+        align-self: center;
+        justify-self: space-between;
+    }
+
+    .article-p{
+        width: 40%;
+    }
+    
+    #articles article{
+        justify-content: space-around;
+    }
+
+    #revert{
+        width: inherit;
+        margin: 125px 0;
+    }
+    
+    #repos{
+        order: +1;
+    }
+
+    #extra{
+        margin-bottom: 100px;
+    }
+    
+    .studios{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .studios img{
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    #font-size{
+        margin-top: 100px;
+    }
+    
+    #vogue{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 200px 0;
+    }
+    
+    #vogue p{
+        width: 100%;
+    }
+    
+    #vogue img{
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .bigger{
+        font-size: 9.7em;
+    }
+    
+    #combine{
+        font-size: 0.8em;
+    }
+
+    #pineapple{
+        margin-top: 100px;
+    }
+
+    .smaller{
+        text-align: center;
+        font-size: 9em;
+    }
+
+    #conclusion{
+        line-height: 0.3;
+        margin: 300px 0;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    footer{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(255, 255, 255, 0);
+    }
+
+    #menuToggle input{
+        display: none;
+    }
+
+    #setup img{
+        width: 100%;
+        max-width: 130px;
+        left: 0;
+    }    
+    
+    #butt{
+        position: fixed;
+        top: 20vh;
+        left: 5vw;
+    }
+    
+    #white-spacee{
+        position: fixed;
+        bottom: 20vh;
+        left: 5vw;
+    }
+    
+    #be-boldd{
+        position: fixed;
+        top: 20vh;
+        right: 5vw;
+    }
+    
+    #text-blockss{
+        position: fixed;
+        bottom: 20vh;
+        right: 5vw;
+    }
+
+    .show{
+        list-style-type: none;
+        font-size: 2em;
+        color: #000000;
+        opacity: 60%;
+    }
+
+    .show:hover{
+        opacity: 80%;
+        font-weight: 600;
+
+        transition: font-weight 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+    }
+
+    .show:active{
+        opacity: 100%;
+        font-weight: 800;
+        text-decoration: underline;
+
+        transition: font-weight 0.5s cubic-bezier(0.77,0.2,0.05,1.0), text-decoration 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+    }
+
+    .show:focus-visible{
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 1700px){
+    #menuToggle
+    {
     display: block;
-    position: fixed;
-    bottom: 25px;
-    left: 30px;
-  
-    z-index: 1000;
-  
+    
+    z-index: 1;
+    
     -webkit-user-select: none;
     user-select: none;
-}
-
-#menuToggle a
-{
+    }
+    
+    #menuToggle a
+    {
     text-decoration: none;
-    color: #9d9b9b;
-  
+    color: #9b9b9b;
+    
     transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
+    }
+    
+    #menuToggle a:hover
+    {
     color: #ffffff;
-}
-
-
-#menuToggle input
-{
+    }
+    
+    
+    #menuToggle input
+    {
     display: block;
-    width: 20px;
-    height: 16px;
+    width: 40px;
+    height: 32px;
+    background-color: orange;
+    z-index: 1000;
     position: absolute;
-    top: -7px;
-    left: -5px;
+    top: 18px;
+    left: 61px;
     
     cursor: pointer;
     
@@ -277,13 +522,13 @@ footer{
     z-index: 2; /* and place it over the hamburger */
     
     -webkit-touch-callout: none;
-}
+    }
 
-/*
-* Just a quick hamburger
-*/
-#menuToggle span
-{
+    /*
+    * Just a quick hamburger
+    */
+    #menuToggle span
+    {
     display: block;
     width: 30px;
     height: 3px;
@@ -300,76 +545,76 @@ footer{
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     opacity 0.55s ease;
-}
-
-#menuToggle:hover span{
+    }
+    
+    #menuToggle:hover span{
     background-color: #d2d2d2;
-}
-
-#menuToggle span:first-child
-{
+    }
+    
+    #menuToggle span:first-child
+    {
     transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
     transform-origin: 0% 100%;
-}
-
-/* 
-* Transform all the slices of hamburger
-* into a crossmark.
-*/
-#menuToggle input:checked ~ span
-{
+    }
+    
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+    #menuToggle input:checked ~ span
+    {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #ffffff;
-}
-
-/*
-* But let's hide the middle one.
-*/
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+    }
+    
+    /*
+    * But let's hide the middle one.
+    */
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
-* Ohyeah and the last one should go the other direction
-*/
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+    }
+    
+    /*
+    * Ohyeah and the last one should go the other direction
+    */
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
     transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
- #menu
- {
-     position: fixed;
-     left: 0px;
-     bottom: 0px;
-     width: 300px;
-     padding: 50px;
+    }
+    
+    /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+    #menu
+    {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 130px;
+    padding: 50px;
      
-     background: #000000;
-     list-style-type: none;
-     /* to stop flickering of text in safari */
+    background: #000000;
+    list-style-type: none;
+    /* to stop flickering of text in safari */
      
-     transform-origin: 0% 0%;
-     transform: translate(-100%, 0);
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
      
-     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
     
     #menu li
     {
-        padding: 10px 0;
-        font-size: 22px;
+    padding: 10px 0;
+    font-size: 22px;
     }
     
     /*
@@ -377,142 +622,6 @@ footer{
     */
     #menuToggle input:checked ~ ul
     {
-        transform: none;
+    transform: none;
     }
-    
-    @media screen and (min-width: 770px){
-        #container{
-            max-width: 550px;
-        }
-    }
-    
-    @media screen and (min-width: 1260px){
-        p{
-            font-size: 1.2em;
-        }
-
-        img{
-            position: revert;
-            width: 100%;
-        }
-    
-        #container{
-            max-width: 900px;
-        }
-    
-        #but h2{
-            text-align: center;
-            font-size: 6em;
-        }
-    
-        .right-pad{
-            padding-right: 20%;
-        }
-    
-        .left-pad{
-            padding-left: 20%;
-        }
-    
-        .extra{
-            margin: 200px 0;
-        }
-    
-        .extra-double{
-            margin: 400px 0;
-        }
-    
-        .extra-half{
-            margin-top: 200px;
-        }
-    
-        .extra-none{
-            margin-top: 400px;
-            margin-bottom: 0;
-        }
-    
-        #studio-rotate-container{
-            width: 50%;
-        }
-    
-        #studio-rotate-img {
-            width: 50%;
-            height: 100%;
-            position: revert;
-            align-self: center;
-        }
-    
-        #achieving {
-            margin: 300px 0;
-            font-size: 2em;
-        }
-    
-        #white-space{
-            margin: 300px 0;
-        }
-    
-        #white-space h2{
-            font-size: 7em;
-            line-height: 150px;
-        }
-    
-        #articles p, img{
-            width: 40%;
-            align-self: center;
-            justify-self: space-between;
-        }
-    
-        #articles article{
-            justify-content: space-around;
-        }
-    
-        #repos{
-            order: +1;
-        }
-    
-        .center{
-            text-align: center;
-        }
-    
-        .studios{
-            display: flex;
-            justify-content: space-between;
-        }
-    
-        .studios img{
-            width: 50%;
-            height: 100%;
-            margin-top: 50px;
-        }
-    
-        #studios-img{
-            margin-top: -50px;
-        }
-    
-        #vogue{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 200px 0;
-        }
-    
-        #vogue p{
-            width: 50%;
-        }
-    
-        #vogue img{
-            width: 50%;
-            margin: auto;
-        }
-    
-        .bigger{
-            font-size: 10em;
-        }
-    
-        #combine{
-            font-size: 0.8em;
-        }
-    
-        .m-meet{
-            text-align: center;
-        }
-    }
+}
