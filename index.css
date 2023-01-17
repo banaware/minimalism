@@ -248,6 +248,14 @@ footer{
     #container{
         max-width: 550px;
     }
+
+    .bigger{
+        font-size: 7.8em;
+    }
+
+    .bigger-achieve{
+        font-size: 5em;
+    }
 }
     
 @media screen and (min-width: 1260px){
